@@ -42,7 +42,7 @@ def carregar_dados(caminho_arquivo):
 
 # --- Carregamento dos Dados ---
 try:
-    df_imoveis = carregar_dados('/home/matheux/Documentos/Codigos/EST/AddressSpineUK.csv')
+    df_imoveis = carregar_dados('AddressSpineUK.csv')
 except FileNotFoundError:
     st.error("Erro: O arquivo 'AddressSpineUK.csv' não foi encontrado. Por favor, certifique-se de que ele está na mesma pasta que o script Python.")
     st.stop()
